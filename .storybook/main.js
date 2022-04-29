@@ -5,8 +5,17 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
   ],
+  staticDirs: ["../static"],
   framework: "@storybook/react",
   core: {
     builder: "webpack5",
+  },
+  webpackFinal: async (config) => {
+    config.module.rules.push({
+      test: /\.scss$/,
+      use: ["style-loader", "css-loader", "sass-loader"],
+    });
+    config.resolve.extensions.push(".ts", ".tsx");
+    return config;
   },
 };

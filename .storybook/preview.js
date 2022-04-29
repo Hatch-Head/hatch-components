@@ -6,6 +6,8 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  viewMode: "docs",
+  grid: { cellSize: 8 },
 };
 
-//import "../src/scss/style.scss";
+import "../src/scss/theme.scss";
