@@ -1,0 +1,35 @@
+// 
+// user.scss
+// Use this to write your custom SCSS
+//
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.navbar-toggler-icon {
+    /* background-color: red; */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23575A7B' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+.ais-SearchBox-input{
+  @extend .form-control;
+}
+.ais-SearchBox{
+  width: 100%;
+}
+.ais-SearchBox-submit,
+.ais-SearchBox-reset {
+  display: none;
+}
+
+.ais-Hits-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  @extend .row;
+  .ais-Hits-item {
+    @extend .col-md-4
+  }
+}
