@@ -1,5 +1,6 @@
 # build
 dist
+storybook-static
 
 # Created by https://www.toptal.com/developers/gitignore/api/osx,windows,node,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=osx,windows,node,react

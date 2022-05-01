@@ -1,0 +1,28 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import H1 from "./H1";
+
+<Meta title="Components/atoms/Typography/H1" component={H1} />
+
+export const Template = (args) => <H1 {...args} />;
+
+# H1
+
+The `H1` component is a text component used for reading headings
+
+<Canvas>
+  <Story name="H1" args={{children: 'Heading 1'}} layout={null}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+
+## H1 component rendered as a different heading tag
+
+The `H1` component will render the text as a `<h1>` tag however this can be overridden with the `tag` property. Changing the tag property will not impact the H1's style. `H{1-6}` tags are allowed.
+
+<Canvas>
+  <Story name="Changed tag" args={{tag: 'h3', children: 'Heading as h3'}} layout={null}>
+    {Template.bind({})}
+  </Story>
+</Canvas>

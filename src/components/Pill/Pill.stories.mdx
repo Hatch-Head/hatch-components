@@ -1,0 +1,18 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import Pill from "./Pill";
+
+<Meta title="Components/atoms/Pill" component={Pill} />
+
+export const Template = (args) => <Pill {...args} />;
+
+# Pill
+
+The `Pill` component can represent multiple elements but typically it is used to denote categories or tags
+
+<Canvas>
+  <Story name="Pill" args={{to: '#', children: 'Pill Text'}} layout={null}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+

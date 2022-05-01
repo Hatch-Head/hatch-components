@@ -6,6 +6,11 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  docs: {
+    source: {
+      state: "close",
+    },
+  },
   viewMode: "docs",
   grid: { cellSize: 8 },
 };

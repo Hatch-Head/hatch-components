@@ -1,0 +1,26 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import Testimonial from "./Testimonial";
+
+<Meta title="Components/molecules/Testimonial" component={Testimonial} />
+
+export const Template = (args) => <Testimonial {...args} />;
+
+# Testimonial
+
+The `Testimonial` component is a text component used for reading headings
+
+<Canvas>
+  <Story
+    name="Testimonial"
+    args={{
+      quote: 'Text for the quote',
+      credit: 'Mary jane',
+      image: 'https://via.placeholder.com/300',
+      alt: 'Photo of Mary Jane'
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+
